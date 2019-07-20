@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mooneiumlite.HomeController">
+    <stylesheets>
+        <URL value="@home.css" />
+      <URL value="@../css/fonts.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="150.0" layoutY="83.0" prefHeight="308.0" prefWidth="300.0" style="-fx-effect: dropshadow(three-pass-box, gray, 5, 0, 0, 0); -fx-background-radius: 10 10 10 10; -fx-background-color: #FFFFFF;">
+         <children>
+            <JFXTextField id="font" fx:id="data" alignment="CENTER" focusColor="WHITE" layoutX="30.0" layoutY="174.0" onAction="#dataaction" prefHeight="41.0" prefWidth="241.0" style="-fx-background-color: #F2F3F5; -fx-background-radius: 10 10 10 10;" stylesheets="@../css/fonts.css" unFocusColor="WHITE" />
+            <Text id="font" layoutX="117.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" text="لديك الآن" />
+            <Text id="font" layoutX="50.0" layoutY="77.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="دينار جزائري" textAlignment="CENTER" />
+            <Text id="font" layoutX="86.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="بمحفظتك المالية" />
+            <Text id="font" layoutX="28.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="أدخل المبلغ الذي تريد سحبه أو إضافته" />
+            <JFXButton id="button" fx:id="dataB" buttonType="RAISED" layoutX="61.0" layoutY="236.0" onAction="#dataBaction" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: #c62828;" stylesheets="@../css/buttons_style.css" text="سحب" textFill="WHITE" />
+            <JFXButton id="button" fx:id="dataA" buttonType="RAISED" layoutX="154.0" layoutY="236.0" onAction="#dataAaction" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: #283593;" stylesheets="@../css/buttons_style.css" text="إضافة" textFill="WHITE" />
+            <JFXTextArea fx:id="dataD" editable="false" focusColor="WHITE" layoutX="142.0" layoutY="53.0" prefHeight="50.0" prefWidth="127.0" promptText="1000000" style="-fx-font-size: 25px; -fx-text-alignment: center;" unFocusColor="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="95.0" fitWidth="262.0" layoutX="176.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mooneium_lite_logo%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="21.0" layoutX="338.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/like.png" />
+         </image>
+      </ImageView>
+      <Text id="font" layoutX="155.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12;" text="تم تطويره بكل      من قبل عمريو وليد وألفة القروي" />
+      <Text id="font" fx:id="url" fill="#5a5a5a" layoutX="35.0" layoutY="461.0" onDragDetected="#urlaction" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="mooneium.mookhtabar.com" />
+      <Text id="font" fill="#5a5a5a" layoutX="369.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12;" text="نسخة اللغة العربية من الإصدار Pre-alpha " />
+      <Text id="font" layoutX="-170.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" />
+      <ImageView fitHeight="28.0" fitWidth="21.0" layoutX="220.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Social_Media/facebook.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="21.0" layoutX="266.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Social_Media/instagram.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="21.0" layoutX="243.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Social_Media/twitter.png" />
+         </image>
+      </ImageView>
+      <Text id="font" fill="#5a5a5a" layoutX="289.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="/mooneium" />
+      <ImageView fitHeight="28.0" fitWidth="21.0" layoutX="10.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Social_Media/internet.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

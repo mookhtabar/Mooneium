@@ -1,0 +1,15 @@
+@font-face {
+src: url("../css/fonts/OoredooArabic-Regular.ttf");
+}
+
+.label {
+  -fx-font-family: "OoredooArabic";
+}
+
+#button {
+    -fx-font-size: 16px;
+    -fx-font-family: "OoredooArabic";
+    -fx-background-radius:50;
+    -fx-background-color: #3F51B5;
+    -fx-alignment: center ;
+}

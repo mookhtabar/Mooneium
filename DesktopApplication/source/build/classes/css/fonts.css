@@ -1,0 +1,19 @@
+@font-face {
+src: url("../css/fonts/OoredooArabic-Regular.ttf");
+}
+
+.label {
+-fx-font-family: "OoredooArabic";
+}
+.jfx-text-field, .jfx-password-field {
+-fx-font-family: "OoredooArabic";
+}
+
+#font {
+  -fx-font-size: 16px;
+  -fx-font-family: "OoredooArabic";
+}
+#AnchorPane {
+  -fx-font-size: 16px;
+  -fx-font-family: "OoredooArabic";
+}
